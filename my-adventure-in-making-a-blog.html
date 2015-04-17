@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Brown Stone  
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20100928
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>My Adventure in Making a Blog</title>
+<link href="irok-infinite.com/theme/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="irok-infinite.com/" type="application/atom+xml" rel="alternate" title="Kori's Blog ATOM Feed" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+    
+                        	<div id="content">
+					<div class="post">
+						<h2 class="title"><a href="my-adventure-in-making-a-blog.html">My Adventure in Making a Blog</a></h2>
+						<p class="meta"><span class="date">Date 12/28/2014 </span><span class="posted">Author <a href="#">Kori</a></span><span>&nbsp; | Category : <a href="irok-infinite.com/category/computers.html">Computers</a></span></p>
+					
+						<div style="clear: both;">&nbsp;</div>
+						<div class="entry">
+						 <p>As I've told you, making a Blog from scratch is insanely difficult, and because of that I'm going to tell you how I did it.</p>
+<ol>
+<li>I Installed Ubuntu 14.04 Server Edition onto an old Dell Optiplex 760.</li>
+<li>Downloaded ssh and got it working on my server. To use it on my laptop I typed ssh (LAN IP 
+address) </li>
+<li>I installed Virtualenv and created a virtual environment that was set to python 3.4</li>
+<li>While in my virtualenv I installed Django1.7.1 </li>
+<li>To check if Django worked I installed w3m (a command line based browser) to see, which was good because at that point it didn't</li>
+<li>I set up Port Forwarding for my server which worked on Port 80</li>
+<li>Then I retried w3m and Django actually worked. </li>
+<li>Next I installed Nginx, but to do that I had to exit my virtualenv, it took me a while to figure 
+out that the command to do that is deactivate.</li>
+<li>Back in my virtualenv, I installed Gunicorn .</li>
+<li>Got Sqlite3 setup with Django.</li>
+<li>Failed a lot trying to get Gunicorn and Nginx working, but eventually they did</li>
+<li>For the main blog work I mostly used a DjangoGirls Tutorial on how to make a blog.</li>
+</ol>
+<p>Well those are all the steps I used to get my blog working, I tried more than that but those didn't really work. In the future I plan to do more Django tutorials so I can get a better understanding of how everything works and also add more features to this. I might even just throw this out and make an easier, more awesome website once I understand everything better. I did learn a lot from this experience though, I now have a better understanding of how files on Ubuntu get to the person who is viewing my website. I know Nginx is the way the internet connects to my files, it then deals with my static files, like CSS, while it passes the dynamic ones, html for example, to Gunicorn. While Django sets up the file structure and gives me a place to change the website before it deploys. Finally, I'm definitely more comfortable using command line because I had to make my whole website using nano(the command line file editor) and w3m and I had to make and delete directories, files, and navigate in and out of the file structure because it was really hard to make everything work together.</p>	
+						</div>
+					</div>
+			      
+					<div style="clear: both;">&nbsp;</div>
+
+ <ul>
+     <li>
+<h4 class="title">Previous Post</h4>
+         <a href="irok-infinite.com/css-workaround.html">
+             CSS Workaround
+         </a>
+     </li>
+     <li>
+<h4 class="title">Next Post</h4>
+         <a href="irok-infinite.com/tomorrow-marks-the-beginning-of-the-epic-adventure-of-battlecode.html">
+             Tomorrow Marks the Beginning of the Epic Adventure of Battlecode
+         </a>
+     </li>
+</ul>
+					 
+					  
+ 
+
+				</div>
+				<!-- end #content -->
+				<div id="sidebar">
+					<div id="logo">
+						<h1><a href="irok-infinite.com">Kori's Blog</a></h1>
+					</div>
+					<div id="menu">
+						<ul>
+							<li ><a href="irok-infinite.com">Home</a></li>
+							<li ><a href="irok-infinite.com/archives.html">Archives</a></li>
+						</ul>
+					</div>
+					
+
+
+
+
+
+
+
+
+<ul>
+						<li>
+							<h2>Categories</h2>
+							<ul>
+								 <li ><a href="irok-infinite.com/category/battlecode.html">Battlecode</a></li>
+								 <li class="active"><a href="irok-infinite.com/category/computers.html">Computers</a></li>
+								 <li ><a href="irok-infinite.com/category/life.html">Life</a></li>
+							</ul>
+						</li>
+						<li>
+							<h2>Important Sites</h2>
+							<ul>
+                                                            <li><a href="https://sites.google.com/site/csitin3/">CSIT-in-3</a></li>
+                                                            <li><a href="http://www.hartnell.edu/">Hartnell College</a></li>
+                                                            <li><a href="https://csumb.edu/">CSU Monterey Bay</a></li>
+							</ul>
+						</li>
+<!--						<li>
+						        <h2>Tags</h2>
+						        <ul>
+						        </ul>
+						</li>
+-->						
+						
+					</ul>
+				</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+
+<div id="footer">
+	<p>Copywrite (c) 2015 Irok-Infinite.com. All rights reserved. Design with <a href="http://www.freecsstemplates.org/">CSS Templates</a>.</p>
+	<p>Proudly powered by <a href="http://blog.getpelican.com/">Pelican</a>, which takes great advantages of <a href="http://python.org">Python</a>.
+</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
